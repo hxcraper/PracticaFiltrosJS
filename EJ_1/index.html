@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando EPE2</title>
+</head>
+<body>
+    <h1>Buscar por empleados</h1>
+
+    <label for="rutInput">Ingrese su rut: </label>
+    <input type="text" id="rutInput" placeholder="184645483">
+    <br><br>
+
+    <label for="cargoSelect">Filtar por cargo: </label>
+    <select id="cargoSelect">
+        <option value="">Todos</option>
+        <option value="Operario">Operario</option>
+        <option value="Aseo y Jardinería">Aseo y Jardinería</option>
+        <option value="Encargado de Turno Distrib. y Despacho">Encargado de Turno Distrib. y Despacho</option>
+        <option value="Jefe de Logística">Jefe de Logística</option>
+        <option value="Asistente Comercial">Asistente Comercial</option>
+        <option value="Operador de Grúa">Operador de Grúa</option>
+        <option value="Camarero">Camarero</option>
+        <option value="Encargado de Calidad y Recepción">Encargado de Calidad y Recepción</option>
+        <option value="Planificador Logístico">Planificador Logístico</option>
+        <option value="Maestro Mantención Locales">Maestro Mantención Locales</option>
+        <option value="Jefe Zonal">Jefe Zonal</option>
+        <option value="Encargado de Bodega, Insumos y Adquisiciones">Encargado de Bodega, Insumos y Adquisiciones</option>
+        <option value="Ingeniero En Prevención de Riesgos">Ingeniero En Prevención de Riesgos</option>
+        <option value="Asistente de Gestión de Personas">Asistente de Gestión de Personas</option>
+        <option value="Jefe Auditoria Cajas">Jefe Auditoria Cajas</option>
+        <option value="Administrativo Contable">Administrativo Contable</option>
+        <option value="Gerente Comercial">Gerente Comercial</option>
+        <option value="Analista de Planificación y Compras">Analista de Planificación y Compras</option>
+        <option value="Subgerente de Desarrollo">Subgerente de Desarrollo</option>
+        <option value="Subgerente de Operaciones Comerciales">Subgerente de Operaciones Comerciales</option>
+        <option value="Fiscal">Fiscal</option>
+        <option value="Jefe de Administración">Jefe de Administración</option>
+        <option value="Soporte Informático">Soporte Informático</option>
+        <option value="Técnico Electrónico">Técnico Electrónico</option>
+        <option value="Vendedor(a)">Vendedor(a)</option>
+        <option value="Jefe de Ventas RM y VI Región">Jefe de Ventas RM y VI Región</option>
+        <option value="Jefe de Planificación Logística">Jefe de Planificación Logística</option>
+        <option value="Coordinador de Transporte">Coordinador de Transporte</option>
+        <option value="Jefe de Ventas Varas">Jefe de Ventas Varas</option>
+        <option value="Cajero Facturador">Cajero Facturador</option>
+        <option value="Subgerente de Ventas Zona Centro Sur">Subgerente de Ventas Zona Centro Sur</option>
+        <option value="Jefe Trafico">Jefe Trafico</option>
+        <option value="Jefe Zonal Comercial">Jefe Zonal Comercial</option>
+    </select>
+
+        
+    <br><br>
+
+    <label for="areaSelect">Buscar por aréa: </label>
+    <select id="areaSelect">
+        <option value="">Todos</option>
+        <option value="AD023 LOGISTICA LAS ACACIAS">AD023 LOGISTICA LAS ACACIAS</option>
+        <option value="CENTRAL">CENTRAL</option>
+        <option value="CENTRAL RRHH">CENTRAL RRHH</option>
+        <option value="CENTRAL TORRE">CENTRAL TORRE</option>
+        <option value="COMERCIAL CENTRAL FD030010">COMERCIAL CENTRAL FD030010</option>
+        <option value="FD020001 LOGISTICA LAS ACACIAS">FD020001 LOGISTICA LAS ACACIAS</option>
+        <option value="FD040011 FINANZAS Y TESORERÍA">FD040011 FINANZAS Y TESORERÍA</option>
+        <option value="RRHH">RRHH</option>
+        <option value="SQ004 TI">SQ004 TI</option>
+        <option value="SUC. RANCAGUA FD030093">SUC. RANCAGUA FD030093</option>
+        <option value="SUC. SANTIAGO FD030092">SUC. SANTIAGO FD030092</option>
+        <option value="SUC. V REGION FD030094">SUC. V REGION FD030094</option>
+    </select>
+
+    <button onclick="filtrarEmpleados()">Filtrar</button>
+
+    <div id="resultado"> 
+
+    </div>
+
+    <script src="buscarEmpleado.js"></script>
+
+
+
+    
+</body>
+</html>
